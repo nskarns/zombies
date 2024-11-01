@@ -133,24 +133,24 @@ header {
 }
 
 /* Media query for mobile devices */
-@media (max-width: 768px) { /* Adjust the max-width as needed */
+@media (max-width: 768px) { 
     .container {
-        flex-direction: column; /* Change to column layout on mobile */
-        max-height: none; /* Remove max height constraint */
-        height: auto; /* Allow container to grow */
+        flex-direction: column; 
+        max-height: none; 
+        height: auto; 
     }
 
     .videos {
-        flex-direction: column; /* Ensure videos stack vertically */
-        gap: 10px; /* Add gap between videos on mobile */
+        flex-direction: column;
+        gap: 10px;
     }
 
     .video {
-        margin: 10px 0; /* Vertical margin for videos */
+        margin: 10px 0; 
     }
 
     .video-wrapper {
-        display: none; /* Hide video wrappers on mobile if needed */
+        display: none;
     }
 
     .submit-form {
