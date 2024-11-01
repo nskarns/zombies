@@ -5,6 +5,7 @@ body {
     background-color: rgb(68, 68, 68);
     color: rgb(230, 230, 230);
 }
+
 header {
     background-image: url('https://clan.cloudflare.steamstatic.com/images//25965595/d3607a43cd357d9ee5391150b0991e1d4fdce953.jpg');
     background-size: cover;
@@ -20,6 +21,14 @@ header {
     top: 0;
     z-index: 1000;
     padding: 10px; 
+    flex-direction: column;
+    gap: 0;
+}
+
+.tiny-text {
+    font-size: 0.5em; 
+    color: white; 
+    margin-top: 5px;
 }
 
 .container {
@@ -57,6 +66,9 @@ header {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .leaderboard-header {
@@ -68,6 +80,7 @@ header {
 .leaderboard-description {
     font-size: 1em;
     margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .videos {
