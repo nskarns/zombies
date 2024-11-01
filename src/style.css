@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(68, 68, 68);
+    color: rgb(230, 230, 230);
+}
+header {
+    background-image: url('https://clan.cloudflare.steamstatic.com/images//25965595/d3607a43cd357d9ee5391150b0991e1d4fdce953.jpg');
+    background-size: cover;
+    background-color: #333; 
+    height: 200px;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
+    padding: 10px; 
+}
+
+.container {
+    display: flex;
+    gap: 20px; 
+    margin: 20px;
+    flex-direction: row;
+    max-height: calc(33vw * 9 / 16); 
+}
+
+.video-container {
+    flex: 1; 
+    display: flex; 
+    width: 100%;
+    height: 100%;
+}
+.video-wrapper {
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0;
+    width: 100%;
+    border: 3px solid #000000;
+    border-radius: 5px;
+}
+
+.video-wrapper iframe {
+    position: absolute; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
+.leaderboard {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.leaderboard-header {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.leaderboard-description {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.videos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.video {
+    flex: 1;
+    margin-right: 10px;
+}
+
+
+.video:last-child {
+    margin-right: 0;
+}
+
+.video-containers {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+}
+
+.video-containers iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0; 
+}
+
+.rank {
+    display: block; 
+    margin-bottom: 5px; 
+    font-weight: bold; 
+}
+
+.submit-form {
+    flex: 1;
+    justify-content: center;
+    overflow-y: auto; 
+    background-color: #ccc;
+    border-radius: 5px;
+    border: 3px solid #000000;
+    border-radius: 5px;
+}
+
+.submit-form iframe {
+    width: 100%; 
+    height: 100%; 
+    border: none; 
+    overflow: auto; 
+}
+
+.submit-form::-webkit-scrollbar {
+    display: none; 
+}
+
+.submit-form {
+    scrollbar-width: none;
+}
