@@ -131,3 +131,49 @@ header {
 .submit-form {
     scrollbar-width: none;
 }
+
+/* Media query for mobile devices */
+@media (max-width: 768px) { /* Adjust the max-width as needed */
+    .container {
+        flex-direction: column; /* Change to column layout on mobile */
+        max-height: none; /* Remove max height constraint */
+        height: auto; /* Allow container to grow */
+    }
+
+    .videos {
+        flex-direction: column; /* Ensure videos stack vertically */
+        gap: 10px; /* Add gap between videos on mobile */
+    }
+
+    .video {
+        margin: 10px 0; /* Vertical margin for videos */
+    }
+
+    .video-wrapper {
+        display: none; /* Hide video wrappers on mobile if needed */
+    }
+
+    .submit-form {
+        flex: 1;
+        justify-content: center;
+        background-color: #ccc;
+        border-radius: 5px;
+        border: 3px solid #000000;
+        border-radius: 5px;
+        min-height: 500px;
+    }
+    
+    .submit-form iframe {
+        width: 100%; 
+        height: 500px;
+        border: none;
+    }
+    
+    .submit-form::-webkit-scrollbar {
+        display: none; 
+    }
+    
+    .submit-form {
+        scrollbar-width: none;
+    }
+}
